@@ -1,5 +1,12 @@
 ---
 name: diy-my-house
+slug: diy-my-house
+displayName: 户型图转装修设计器
+version: 1.0.0
+summary: 一张户型图或 CAD 图纸，自动还原成可 2D / 3D 直接设计的装修设计器网页：单文件 HTML、家具布置、水电管线自动排布、算量报价、国标 DXF 图纸导出。
+license: MIT
+tags: [户型图, 室内设计, 装修, 3d, cad, dxf]
+homepage: https://github.com/southcul/diy-my-house
 description: 把用户给的户型图（图片：酷家乐/贝壳/房天下户型图、售楼处户型图、手绘带尺寸的平面图；CAD 图纸：设计院 / 装修公司导出的矢量 PDF、DXF、原始结构图、建筑平面图，黑底 CAD 截图）自动还原成可交互的装修设计器网页（单文件 HTML，2D 平面 + 3D 鸟瞰/漫游 + 家具布置 + 水电/吊顶/铺装/拆改图层 + 电路 / 水管 / 网线自动排布 + 报价 + PDF 施工图），初始户型就是这张图。触发词：户型图生成设计器、户型图转 3D、把户型图做成网页、CAD 图纸转设计器、DXF/PDF 户型图、原始结构图、户型还原、做一个装修设计网页、户型图 2D/3D 展示、电路布线图、水电管线排布、floor plan to 3D。
 ---
 

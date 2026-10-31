@@ -241,7 +241,26 @@ AutoCAD、天正、中望、浩辰和常见看图软件都能直接打开；按 
 
 3. 本机需要有 Chrome 或 Edge（自查截图要用）。找不到时，设置环境变量 `CHROME_PATH` 指向浏览器程序。
 
+也可以从 SkillHub 直接安装（发布后）：
+
+```bash
+skillhub install diy-my-house
+```
+
+
 Windows 上 `python` / `node` 不在 PATH 时，用绝对路径调用解释器即可，`scripts/` 里的脚本不依赖当前目录。
+
+## 发布到 SkillHub
+
+`SKILL.md` 头部已按 [SkillHub 发布规范](https://skillhub.cn/tutorials#publish-via-cli) 写好 frontmatter（`slug` / `displayName` / `version` / `summary` / `license` / `tags` / `homepage`），目录可直接发布：
+
+```bash
+skillhub login --key skh_xxx --host https://api.skillhub.cn
+skillhub publish . --host https://api.skillhub.cn --dry-run     # 本地预检
+skillhub publish . --host https://api.skillhub.cn --changelog "首次发布"
+```
+
+CLI 打包时会自动排除 `.git` / `node_modules` / `__pycache__`，不用手动清理。改版本时同步改 `SKILL.md` 里的 `version`。
 
 ## 界面主题
 
